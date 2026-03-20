@@ -1,13 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>CHANGE ME</title>
+    <title>My Awesome Website</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f5f5f5;
+        color: #222;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      #all-contents {
+        max-width: 1500px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 32px 40px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+        padding: 16px 24px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+      }
+
+      nav h1 {
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #000;
+      }
+
+      #nav-ul {
+        list-style: none;
+        display: flex;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.85rem;
+        padding: 6px 14px;
+        border-radius: 8px;
+        transition: 0.25s;
+      }
+
+      .nav-li a:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .sidebar-img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 16px;
+        filter: grayscale(100%);
+        transition: 0.4s;
+      }
+
+      .sidebar-img:hover {
+        filter: grayscale(0%);
+        transform: translateY(-4px);
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .content p {
+        margin: 0;
+        color: #999;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+
+      #interests {
+        margin-top: 32px;
+      }
+
+      #interests h3 {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: #aaa;
+      }
+
+      #interests ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+      }
+
+      #interests li {
+        padding: 10px 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 100px;
+        transition: 0.25s;
+      }
+
+      #interests li:hover {
+        background: #000;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+    </style>
   </head>
 
   <body>
-    <!-- All content goes here -->
     <div id="all-contents">
-      
+      <nav>
+        <h1>Your Name's Website</h1>
+        <ul id="nav-ul">
+          <li class="nav-li"><a href="#">Home</a></li>
+          <li class="nav-li"><a href="#">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="sidebar">
+          <img
+            class="sidebar-img"
+            src="https://picsum.photos/400/500"
+            alt="My image"
+          />
+        </div>
+
+        <div class="content">
+          <h2>Your Name</h2>
+          <p>Future Software Engineer</p>
+
+          <div id="interests">
+            <h3>Interests</h3>
+            <ul>
+              <li>Coding</li>
+              <li>Gaming</li>
+              <li>Music</li>
+            </ul>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
